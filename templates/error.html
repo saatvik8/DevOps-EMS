@@ -1,6 +1,10 @@
 {% extends "base.html" %}
-{% block content %}
-<div class="card login-card" style="text-align:center">
-  <h1>{{ code }}</h1><p>{{ message }}</p><a href="/">Go home</a>
+{% block title %}{{ code }} · Employee Management{% endblock %}
+{% block body %}
+<div class="err-page">
+  <div class="err-code">{{ code }}</div>
+  <h2>{{ message }}</h2>
+  <p class="muted">The page you requested could not be shown.</p>
+  <a class="btn" href="/">Go home</a>
 </div>
 {% endblock %}
